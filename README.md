@@ -377,7 +377,6 @@ random.shuffle(["tree", "apple", "house", "earth"]);
 > [apple, earth, house, tree]
 > [house, apple, tree, earth]
 ```
-- #### _[Return to methods](#methods)_
 
 <a id="random.shuffle"></a>
 Example 10.1 (__`random.shuffle`__)
@@ -389,6 +388,7 @@ random.shuffle([1, 2, 3, 4, 5]);
 > [4, 1, 2, 5, 3]
 > [3, 5, 2, 4, 1]
 ```
+- #### _[Return to methods](#methods)_
 
 <a id="random.choice"></a>
 Example 11 (__`random.choice`__)
@@ -400,7 +400,6 @@ random.choice(["tree", "apple", "house", "earth"]);
 > apple
 > house
 ```
-- #### _[Return to methods](#methods)_
 
 <a id="random.choice"></a>
 Example 11.1 (__`random.choice`__)
@@ -412,3 +411,4 @@ random.choice([1, 2, 3, 4, 5]);
 > 3
 > 1
 ```
+- #### _[Return to methods](#methods)_
