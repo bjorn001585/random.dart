@@ -3,7 +3,7 @@ T min<T extends num>(List<T> values) {
   return values.reduce((value, element) => element < start ? (start = element) : start);
 }
 
-typedef Chunk<T> = List<List<T>>
+typedef Chunk<T> = List<List<T>>;
 
 class Random {
   int seed = DateTime.now().millisecond * 123456789;
