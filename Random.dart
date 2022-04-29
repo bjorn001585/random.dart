@@ -6,26 +6,26 @@ T min<T extends num>(List<T> values) {
 typedef Chunk<T> = List<List<T>>;
 
 class Random {
-  int seed = DateTime.now().millisecond * 123456789;
+  int seed = DateTime.now().difference(DateTime(1970)).inMilliseconds;
 
-  int _generateSeed() {
+  int _normalizeSeed() {
     seed = ((seed + 0x7ED55D16) + (seed << 12))  & 0xFFFFFFFF;
     seed = ((seed ^ 0xC761C23C) ^ (seed >>> 19)) & 0xFFFFFFFF;
     seed = ((seed + 0x165667B1) + (seed << 5))   & 0xFFFFFFFF;
-    seed = ((seed + 0xD3A2646C) ^ (seed << 9))   & 0xFFFFFFFF;
+    seed = ((seed ^ 0xD3A2646C) ^ (seed << 9))   & 0xFFFFFFFF;
     seed = ((seed + 0xFD7046C5) + (seed << 3))   & 0xFFFFFFFF;
     seed = ((seed ^ 0xB55A4F09) ^ (seed >>> 16)) & 0xFFFFFFFF;
-    return seed & 0xFFFFFFF;
+    return seed & 0xFFFFFFFF;
   }
 
   Random() {
-    seed = _generateSeed();
+    seed = _normalizeSeed();
   }
 
   Random.seed(this.seed);
 
   double next() {
-    return _generateSeed() / 0xFFFFFFF;
+    return _normalizeSeed() / 0xFFFFFFFF;
   }
 
   int rangeInt(int from, int to) {
@@ -33,7 +33,7 @@ class Random {
   }
 
   int rangeIntTo(int to) {
-    return rangeInt(0, to).floor();
+    return rangeInt(0, to);
   }
 
   int rangeIntBetween(int from, int to) {
@@ -47,7 +47,7 @@ class Random {
   double rangeDouble(int from, int to) {
     var result = from + next() * (to - from);
 
-    if(result > (to - 1)) return to.toDouble() - 1.0;
+    if(result > to - 1) return to.toDouble() - 1.0;
 
     return result;
   }
@@ -222,7 +222,7 @@ class Random {
       buffer.add(chunk);
     }
 
-    return buffer
+    return buffer;
   }
 
   List<T> shuffle<T>(List<T> list) {
