@@ -3,6 +3,8 @@ T min<T extends num>(List<T> values) {
   return values.reduce((value, element) => element < start ? (start = element) : start);
 }
 
+typedef Chunk<T> = List<List<T>>
+
 class Random {
   int seed = DateTime.now().millisecond * 123456789;
 
@@ -115,9 +117,9 @@ class Random {
     return List<double>.generate(count, (e) => next());
   }
 
-  List<List<double>> chunkAny(int count, int size) {
+  Chunk<double> chunkAny(int count, int size) {
     var list = listAny(count);
-    List<List<double>> buffer = [];
+    Chunk<double> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
@@ -127,9 +129,9 @@ class Random {
     return buffer;
   }
 
-  List<List<int>> chunkInt(int count, int size, {required int from, required int to}) {
+  Chunk<int> chunkInt(int count, int size, {required int from, required int to}) {
     var list = listInt(count, from: from, to: to);
-    List<List<int>> buffer = [];
+    Chunk<int> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
@@ -139,9 +141,9 @@ class Random {
     return buffer;
   }
 
-  List<List<int>> chunkIntTo(int count, int size, {required int to}) {
+  Chunk<int> chunkIntTo(int count, int size, {required int to}) {
     var list = listIntTo(count, to: to);
-    List<List<int>> buffer = [];
+    Chunk<int> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
@@ -151,9 +153,9 @@ class Random {
     return buffer;
   }
 
-  List<List<int>> chunkIntBetween(int count, int size, {required int from, required int to}) {
+  Chunk<int> chunkIntBetween(int count, int size, {required int from, required int to}) {
     var list = listIntBetween(count, from: from, to: to);
-    List<List<int>> buffer = [];
+    Chunk<int> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
@@ -163,9 +165,9 @@ class Random {
     return buffer;
   }
 
-  List<List<int>> chunkIntBetweenTo(int count, int size, {required int to}) {
+  Chunk<int> chunkIntBetweenTo(int count, int size, {required int to}) {
     var list = listIntBetweenTo(count, to: to);
-    List<List<int>> buffer = [];
+    Chunk<int> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
@@ -175,9 +177,9 @@ class Random {
     return buffer;
   }
 
-  List<List<double>> chunkDouble(int count, int size, {required int from, required int to}) {
+  Chunk<double> chunkDouble(int count, int size, {required int from, required int to}) {
     var list = listDouble(count, from: from, to: to);
-    List<List<double>> buffer = [];
+    Chunk<double> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
@@ -187,9 +189,9 @@ class Random {
     return buffer;
   }
 
-  List<List<double>> chunkDoubleTo(int count, int size, {required int to}) {
+  Chunk<double> chunkDoubleTo(int count, int size, {required int to}) {
     var list = listDoubleTo(count, to: to);
-    List<List<double>> buffer = [];
+    Chunk<double> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
@@ -199,9 +201,9 @@ class Random {
     return buffer;
   }
 
-  List<List<double>> chunkDoubleBetween(int count, int size, {required int from, required int to}) {
+  Chunk<double> chunkDoubleBetween(int count, int size, {required int from, required int to}) {
     var list = listDoubleBetween(count, from: from, to: to);
-    List<List<double>> buffer = [];
+    Chunk<double> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
@@ -211,16 +213,16 @@ class Random {
     return buffer;
   }
 
-  List<List<double>> chunkDoubleBetweenTo(int count, int size, {required int to}) {
+  Chunk<double> chunkDoubleBetweenTo(int count, int size, {required int to}) {
     var list = listDoubleBetweenTo(count, to: to);
-    List<List<double>> buffer = [];
+    Chunk<double> buffer = [];
 
     for(var i = 0; i < list.length; i += size) {
       var chunk = list.sublist(i, min([i + size, count]));
       buffer.add(chunk);
     }
 
-    return buffer;
+    return buffer
   }
 
   List<T> shuffle<T>(List<T> list) {
