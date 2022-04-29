@@ -51,7 +51,7 @@ random.next(); // 0..1 (double)
 > 0.8345876345765455
 > 0.3487563248736456
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.rangeInt"></a>
 Example 2 (__`random.rangeInt`__)
@@ -63,7 +63,7 @@ random.rangeInt(2, 5); // 2..4 (int)
 > 3
 > 3
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.rangeIntTo"></a>
 Example 2.1 (__`random.rangeIntTo`__)
@@ -75,7 +75,7 @@ random.rangeIntTo(5); // 0..4 (int)
 > 3
 > 2
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.rangeIntBetween"></a>
 Example 2.2 (__`random.rangeIntBetween`__)
@@ -87,7 +87,7 @@ random.rangeIntBetween(3, 5); // 3..5 (int)
 > 5
 > 3
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.rangeIntBetweenTo"></a>
 Example 2.3 (__`random.rangeIntBetweenTo`__)
@@ -99,7 +99,7 @@ random.rangeIntBetweenTo(4); // 0..4 (int)
 > 3
 > 3
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.rangeDouble"></a>
 Example 3 (__`random.rangeDouble`__)
@@ -111,7 +111,7 @@ random.rangeDouble(2, 5); // 2..4 (double)
 > 3.456875476567665
 > 4.194545689546776
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.rangeDoubleTo"></a>
 Example 3.1 (__`random.rangeDoubleTo`__)
@@ -123,7 +123,7 @@ random.rangeDoubleTo(5); // 0..4 (double)
 > 4.0
 > 3.459847567567766
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.rangeDoubleBetween"></a>
 Example 3.2 (__`random.rangeDoubleBetween`__)
@@ -135,7 +135,7 @@ random.rangeDoubleBetween(3, 5); // 3..5 (double)
 > 4.645877777655867
 > 5.0
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.rangeDoubleBetweenTo"></a>
 Example 3.3 (__`random.rangeDoubleBetweenTo`__)
@@ -147,7 +147,7 @@ random.rangeDoubleBetweenTo(4); // 0..4 (double)
 > 2.456096458986778
 > 4.0
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listAny"></a>
 Example 4 (__`random.listAny`__)
@@ -159,7 +159,7 @@ random.listAny(5); // 0..1 (List<double>)
 > [0.9935127496477691, 0.560825912508465, 0.7063422639159197, 0.33724800622928147, 0.1545150658283944]
 > [0.225247566496013, 0.2979508723987299, 0.14277286135693215, 0.4538848491530301, 0.5452139695928021]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listInt"></a>
 Example 5 (__`random.listInt`__)
@@ -171,7 +171,7 @@ random.listInt(5, from: 3, to: 7); // 3..6 (List<int>)
 > [4, 4, 3, 5, 3]
 > [5, 3, 4, 5, 3]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listIntTo"></a>
 Example 5.1 (__`random.listIntTo`__)
@@ -183,7 +183,7 @@ random.listIntTo(5, to: 7); // 0..6 (List<int>)
 > [0, 5, 3, 3, 1]
 > [2, 0, 0, 5, 6]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listIntBetween"></a>
 Example 5.2 (__`random.listIntBetween`__)
@@ -195,7 +195,7 @@ random.listIntBetween(5, from: 3, to: 7); // 3..7 (List<int>)
 > [6, 7, 4, 7, 6]
 > [5, 3, 7, 3, 4]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listIntBetweenTo"></a>
 Example 5.3 (__`random.listIntBetweenTo`__)
@@ -207,7 +207,7 @@ random.listIntBetweenTo(5, to: 7); // 0..7 (List<int>)
 > [5, 6, 5, 3, 1]
 > [1, 6, 6, 4, 4]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listDouble"></a>
 Example 6 (__`random.listDouble`__)
@@ -219,7 +219,7 @@ random.listDouble(5, from: 3, to: 7); // 3..6 (List<double>)
 > [5.405433937907219, 5.248685657978058, 3.3953185975551605, 5.844606265425682, 4.042680859565735]
 > [6.0, 5.816057458519936, 6.0, 3.549334794282913, 4.255169600248337]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listDoubleTo"></a>
 Example 6.1 (__`random.listDoubleTo`__)
@@ -231,7 +231,7 @@ random.listDoubleTo(5, to: 7); // 0..6 (List<double>)
 > [2.2341000214219093, 4.841130755841732, 3.56779882311821, 3.0930240266025066, 1.506616123020649]
 > [2.20648006349802, 4.487301416695118, 2.442568812519312, 4.0929312109947205, 1.634649369865656]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listDoubleBetween"></a>
 Example 6.2 (__`random.listDoubleBetween`__)
@@ -243,7 +243,7 @@ random.listDoubleBetween(5, from: 3, to: 7); // 3..7 (List<double>)
 > [5.054147589951754, 6.564841710031033, 7.0, 3.767802633345127, 4.2541635148227215]
 > [3.016904640942812, 7.0, 4.336899809539318, 4.390201225876808, 5.124067880213261]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.listDoubleBetweenTo"></a>
 Example 6.3 (__`random.listDoubleBetweenTo`__)
@@ -255,7 +255,7 @@ random.listDoubleBetweenTo(5, to: 7); // 0..7 (List<double>)
 > [6.113407850265503, 4.244153410196304, 5.2366220355033875, 5.660469561815262, 5.333982914686203]
 > [1.9915370345115662, 3.331274598836899, 7.0, 4.959494173526764, 4.080596953630447]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkAny"></a>
 Example 7 (__`random.chunkAny`__)
@@ -267,7 +267,7 @@ random.chunkAny(5, 2);
 > [[0.738143052905798, 0.7125275731086731], [0.7829286269843578, 0.27064475044608116], [0.4387344755232334]]
 > [[0.551852885633707, 0.7585004270076752], [0.3726946711540222, 0.3711779899895191], [0.26894428580999374]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkInt"></a>
 Example 8 (__`random.chunkInt`__)
@@ -279,7 +279,7 @@ random.chunkInt(6, 2, from: 3, to: 7);
 > [[6, 4], [4, 6], [4, 3]]
 > [[4, 3], [6, 5], [5, 5]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkIntTo"></a>
 Example 8.1 (__`random.chunkIntTo`__)
@@ -291,7 +291,7 @@ random.chunkInt(6, 2, to: 7);
 > [[3, 3], [0, 3], [6, 0]]
 > [[6, 6], [2, 0], [4, 5]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkIntBetween"></a>
 Example 8.2 (__`random.chunkIntBetween`__)
@@ -303,7 +303,7 @@ random.chunkInt(5, 2, from: 3, to: 7);
 > [[3, 7], [3, 4], [5]]
 > [[3, 5], [5, 3], [3]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkIntBetweenTo"></a>
 Example 8.3 (__`random.chunkIntBetweenTo`__)
@@ -315,7 +315,7 @@ random.chunkInt(5, 2, to: 7);
 > [[3, 4], [2, 4], [2]]
 > [[2, 1], [3, 6], [3]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkDouble"></a>
 Example 9 (__`random.chunkDouble`__)
@@ -327,7 +327,7 @@ random.chunkDouble(5, 2, from: 3, to: 7);
 > [[5.5204967856407166, 5.645862773060799], [4.945400610566139, 6.0], [4.62004753947258]]
 > [[4.35637041926384, 4.307720944285393], [4.925325378775597, 6.0], [3.00299870967865]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkDoubleTo"></a>
 Example 9.1 (__`random.chunkDoubleTo`__)
@@ -339,7 +339,7 @@ random.chunkDoubleTo(5, 2, to: 7);
 > [[4.6814752742648125, 3.868235543370247], [5.1304781921207905, 5.379819627851248], [5.282289128750563]]
 > [[4.624453201889992, 1.4494157880544662], [1.5682354979217052, 2.695564813911915], [6.11023335903883]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkDoubleBetween"></a>
 Example 9.2 (__`random.chunkDoubleBetween`__)
@@ -351,7 +351,7 @@ random.chunkDoubleBetween(6, 2, from: 3, to: 7);
 > [[6.068029154092073, 5.768113017082214], [5.550414986908436, 6.610024023801088], [5.995636500418186, 7.0]]
 > [[4.650853957980871, 3.969030689448118], [3.3820792213082314, 3.0245124101638794], [5.6947783306241035, 3.2731356024742126]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.chunkDoubleBetweenTo"></a>
 Example 9.3 (__`random.chunkDoubleBetweenTo`__)
@@ -363,7 +363,7 @@ random.chunkDoubleBetweenTo(6, 2, to: 7);
 > [[4.473068505525589, 4.018000423908234], [7.0, 2.2236675024032593], [4.693288058042526, 2.3173863291740417]]
 > [[2.9299093186855316, 4.457786023616791], [0.5633269548416138, 0.17910036444664001], [0.45169422030448914, 6.181577086448669]]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.shuffle"></a>
 Example 10 (__`random.shuffle`__)
@@ -376,7 +376,7 @@ random.shuffle(["tree", "apple", "house", "earth"]);
 > [apple, earth, house, tree]
 > [house, apple, tree, earth]
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.shuffle"></a>
 Example 10.1 (__`random.shuffle`__)
@@ -399,7 +399,7 @@ random.choice(["tree", "apple", "house", "earth"]);
 > apple
 > house
 ```
-- ### _[Return to methods](#methods)_
+- #### _[Return to methods](#methods)_
 
 <a id="random.choice"></a>
 Example 11.1 (__`random.choice`__)
