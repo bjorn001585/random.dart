@@ -8,6 +8,7 @@ import 'Random.dart';
 ### Using
 ```dart
 var random = Random();
+var random = Random.seed(5667);
 ```
 
 <a id="methods"></a>
